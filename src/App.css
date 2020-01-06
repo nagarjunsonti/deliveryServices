@@ -2,37 +2,126 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navHeader{
+  display:flex;
+  background-color: #089414;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerDescription{
+  padding-top:22px;
+  text-transform: capitalize;
+}
+.logoLink{
+  padding-right:12px;
+}
+.deliveryimg{  
+  position: relative;
+  -webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s infinite;
+  animation-play-state: start;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 100%;}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100%;}
+}
+.mainPageContainer{
+  padding:20px;
+  text-align: center;
+}
+.selectDropDownMainDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center
+}
+.SelectDropDown{
+  padding:10px;
+}
+.midpointActions .SelectDropDown{
+  /*width:88%;*/
+}
+.pathContainer{
+  padding:20px;
+}
+.showLocationPathDiv{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  min-height: 86px;
+  flex-wrap: wrap;
+}
+.cheapestRoutDive .locationPoints{
+  padding: 15px;
+}
+.locationPoints{
+  display: flex;
+  justify-content: center;
+  padding: 20px; 
+}
+.pathPoint{
+  padding-top:6px;
+}
+.checkboxContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.homeContainer{
+  padding-top:20px;
+}
+.midpointActions{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.midPointDiv .MuiIconButton-root{
+  padding:0px;
 }
 
-.App-link {
-  color: #61dafb;
+.costpathDive{    
+    animation: blinkingText 2s infinite;
+    font-weight: bold;
+  }
+  @keyframes blinkingText{
+    0%    { color: #10c018;}
+    25%   { color: #4a5203ed;}
+    50%   { color: #ef0a1a;}
+    75%   { color: #254878;}
+    100%  { color: #04a1d5;}
+  }
+.cheapestRoutDive{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pathIconDiv{
+  width:150px;
+  padding-left:20px;
+}
+.grayIcon{
+  color: #ccc;
+}
+.greenIcon{
+  color: #178416;
+}
+.secondaryIcon{
+  color: #f50057;
+}
+.maximum4Stops{
+    justify-content: left;
+    border-bottom: 1px solid #ccc3; 
+}
+.costIcon{
+  color: #159a136b;
 }
